@@ -1,0 +1,71 @@
+2024-11-07 03:15:12,049 [INFO] WebApp:189 - Connection lost
+2024-11-07 03:15:12,407 [INFO] WebApp:186 - Connection restablished
+2024-11-07 09:23:27,821 [INFO] WebApp:189 - Connection lost
+2024-11-07 09:23:35,445 [INFO] WebApp:186 - Connection restablished
+2024-11-07 09:23:37,709 [INFO] WebApp:189 - Connection lost
+2024-11-07 09:23:37,852 [INFO] WebApp:186 - Connection restablished
+2024-11-07 09:24:48,586 [INFO] WebApp:189 - Connection lost
+2024-11-07 09:24:48,757 [INFO] WebApp:186 - Connection restablished
+2024-11-07 10:29:40,598 [INFO] WebApp:189 - Connection lost
+2024-11-07 10:29:40,797 [INFO] WebApp:186 - Connection restablished
+2024-11-07 11:57:29,626 [INFO] WebApp:189 - Connection lost
+2024-11-07 11:57:29,779 [INFO] WebApp:186 - Connection restablished
+2024-11-07 12:00:30,591 [INFO] WebApp:189 - Connection lost
+2024-11-07 12:00:30,758 [INFO] WebApp:186 - Connection restablished
+2024-11-07 13:21:11,806 [INFO] WebApp:189 - Connection lost
+2024-11-07 13:21:11,977 [INFO] WebApp:186 - Connection restablished
+2024-11-07 16:38:13,839 [INFO] WebApp:189 - Connection lost
+2024-11-07 16:38:14,168 [INFO] WebApp:186 - Connection restablished
+2024-11-07 16:38:17,083 [INFO] WebApp:189 - Connection lost
+2024-11-07 16:38:17,354 [INFO] WebApp:186 - Connection restablished
+2024-11-07 16:38:20,287 [INFO] WebApp:189 - Connection lost
+2024-11-07 16:38:20,456 [INFO] WebApp:186 - Connection restablished
+2024-11-07 16:40:06,583 [INFO] WebApp:189 - Connection lost
+2024-11-07 16:40:06,744 [INFO] WebApp:186 - Connection restablished
+2024-11-07 20:00:30,399 [INFO] Gpio:277 - dependency for GPIO [ETH, RCC, SYS, USART3, USB_OTG_FS]
+2024-11-07 20:00:43,893 [INFO] Gpio:277 - dependency for GPIO [ETH, RCC, SYS, USART3, USB_OTG_FS]
+2024-11-07 20:01:13,922 [WARN] IP:2191 - RxBufferAddress not found: check if there is a RefParameter without a condition.
+2024-11-07 20:01:44,930 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 583866568 Bytes (769654784)
+2024-11-07 20:01:45,197 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 258276600 Bytes (769654784)
+2024-11-07 20:01:45,814 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-11-07 20:01:45,814 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-11-07 20:01:45,814 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-11-07 20:01:45,814 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2024-11-07 20:01:45,816 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-11-07 20:01:45,817 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.15.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.1.202409122256\\db\
+2024-11-07 20:01:46,039 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Grzegorz\STM32CubeIDE\workspace_1.15.1\MyFirstProject\MXTmpFiles\license.tmp_save
+2024-11-07 20:01:46,650 [INFO] CodeEngine:279 - Generated code: C:\Users\Grzegorz\STM32CubeIDE\workspace_1.15.1\MyFirstProject\MXTmpFiles\license.tmp
+2024-11-07 20:01:46,794 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Grzegorz\STM32CubeIDE\workspace_1.15.1\MyFirstProject\Core\Src\gpio.c_save
+2024-11-07 20:01:46,998 [INFO] CodeEngine:279 - Generated code: C:\Users\Grzegorz\STM32CubeIDE\workspace_1.15.1\MyFirstProject\Core\Src\gpio.c
+2024-11-07 20:01:47,023 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Grzegorz\STM32CubeIDE\workspace_1.15.1\MyFirstProject\Core\Inc\gpio.h_save
+2024-11-07 20:01:47,168 [INFO] CodeEngine:279 - Generated code: C:\Users\Grzegorz\STM32CubeIDE\workspace_1.15.1\MyFirstProject\Core\Inc\gpio.h
+2024-11-07 20:01:47,416 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Grzegorz\STM32CubeIDE\workspace_1.15.1\MyFirstProject\MXTmpFiles\cortex.tmp_save
+2024-11-07 20:01:47,528 [INFO] CodeEngine:279 - Generated code: C:\Users\Grzegorz\STM32CubeIDE\workspace_1.15.1\MyFirstProject\MXTmpFiles\cortex.tmp
+2024-11-07 20:01:47,569 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Grzegorz\STM32CubeIDE\workspace_1.15.1\MyFirstProject\Core\Src\usart.c_save
+2024-11-07 20:01:47,753 [INFO] CodeEngine:279 - Generated code: C:\Users\Grzegorz\STM32CubeIDE\workspace_1.15.1\MyFirstProject\Core\Src\usart.c
+2024-11-07 20:01:47,782 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Grzegorz\STM32CubeIDE\workspace_1.15.1\MyFirstProject\Core\Inc\usart.h_save
+2024-11-07 20:01:47,891 [INFO] CodeEngine:279 - Generated code: C:\Users\Grzegorz\STM32CubeIDE\workspace_1.15.1\MyFirstProject\Core\Inc\usart.h
+2024-11-07 20:01:47,936 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Grzegorz\STM32CubeIDE\workspace_1.15.1\MyFirstProject\Core\Src\stm32f7xx_it.c_save
+2024-11-07 20:01:48,085 [INFO] CodeEngine:279 - Generated code: C:\Users\Grzegorz\STM32CubeIDE\workspace_1.15.1\MyFirstProject\Core\Src\stm32f7xx_it.c
+2024-11-07 20:01:48,110 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Grzegorz\STM32CubeIDE\workspace_1.15.1\MyFirstProject\Core\Inc\stm32f7xx_it.h_save
+2024-11-07 20:01:48,204 [INFO] CodeEngine:279 - Generated code: C:\Users\Grzegorz\STM32CubeIDE\workspace_1.15.1\MyFirstProject\Core\Inc\stm32f7xx_it.h
+2024-11-07 20:01:48,250 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Grzegorz\STM32CubeIDE\workspace_1.15.1\MyFirstProject\Core\Src\stm32f7xx_hal_msp.c_save
+2024-11-07 20:01:48,364 [INFO] CodeEngine:279 - Generated code: C:\Users\Grzegorz\STM32CubeIDE\workspace_1.15.1\MyFirstProject\Core\Src\stm32f7xx_hal_msp.c
+2024-11-07 20:01:48,379 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Grzegorz\STM32CubeIDE\workspace_1.15.1\MyFirstProject\MXTmpFiles\system.tmp_save
+2024-11-07 20:01:48,435 [INFO] CodeEngine:279 - Generated code: C:\Users\Grzegorz\STM32CubeIDE\workspace_1.15.1\MyFirstProject\MXTmpFiles\system.tmp
+2024-11-07 20:01:48,463 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\Grzegorz\STM32CubeIDE\workspace_1.15.1\MyFirstProject\Core\Inc\stm32f7xx_hal_conf.h_save
+2024-11-07 20:01:48,570 [INFO] CodeEngine:335 - Generated code: C:\Users\Grzegorz\STM32CubeIDE\workspace_1.15.1\MyFirstProject\Core\Inc\stm32f7xx_hal_conf.h
+2024-11-07 20:01:48,687 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Grzegorz\STM32CubeIDE\workspace_1.15.1\MyFirstProject\Core\Inc\main.h_save
+2024-11-07 20:01:48,821 [INFO] CodeEngine:279 - Generated code: C:\Users\Grzegorz\STM32CubeIDE\workspace_1.15.1\MyFirstProject\Core\Inc\main.h
+2024-11-07 20:01:48,847 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Grzegorz\STM32CubeIDE\workspace_1.15.1\MyFirstProject\Core\Src\main.c_save
+2024-11-07 20:01:49,021 [INFO] CodeEngine:279 - Generated code: C:\Users\Grzegorz\STM32CubeIDE\workspace_1.15.1\MyFirstProject\Core\Src\main.c
+2024-11-07 20:01:49,548 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 189mS.
+2024-11-07 20:01:49,554 [INFO] ProjectBuilder:4828 - Project Generator version: 4.5.0-B34
+2024-11-07 20:01:49,649 [INFO] ConfigFileManager:1531 - The Die is : DIE449
+2024-11-07 20:01:49,666 [INFO] ApiDbMcu:508 - Load IP Config File for FATFS
+2024-11-07 20:01:49,680 [INFO] ApiDbMcu:508 - Load IP Config File for FREERTOS
+2024-11-07 20:01:49,692 [INFO] ApiDbMcu:508 - Load IP Config File for LIBJPEG
+2024-11-07 20:01:49,706 [INFO] ApiDbMcu:508 - Load IP Config File for LWIP
+2024-11-07 20:01:49,725 [INFO] ApiDbMcu:508 - Load IP Config File for MBEDTLS
+2024-11-07 20:01:49,742 [INFO] ApiDbMcu:508 - Load IP Config File for USB_DEVICE
+2024-11-07 20:01:49,755 [INFO] ApiDbMcu:508 - Load IP Config File for USB_HOST

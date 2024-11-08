@@ -1,0 +1,9 @@
+2024-11-04 13:58:31,149 [INFO] WebApp:189 - Connection lost
+2024-11-04 13:58:43,169 [INFO] WebApp:186 - Connection restablished
+2024-11-04 13:58:44,535 [INFO] WebApp:189 - Connection lost
+2024-11-04 13:58:44,677 [INFO] WebApp:186 - Connection restablished
+2024-11-04 15:11:09,794 [INFO] WebApp:189 - Connection lost
+2024-11-04 15:11:10,459 [INFO] WebApp:186 - Connection restablished
+2024-11-04 15:43:37,953 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,477x277,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-11-04 15:43:40,294 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-11-04 15:44:13,413 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,477x277,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
