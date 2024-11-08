@@ -94,7 +94,7 @@ int main(void)
   MX_GPIO_Init();
   MX_USART3_UART_Init();
   /* USER CODE BEGIN 2 */
-  _Bool LD1_State;
+  _Bool LD1_State, LD2_State, LD3_State;
   uint8_t Counter=0;
   /* USER CODE END 2 */
 
@@ -109,6 +109,9 @@ int main(void)
 	  HAL_Delay(100);
 #endif
 #if TASK==2
+	  LD1_State=HAL_GPIO_ReadPin(LD1_GPIO_Port, LD1_Pin);
+	  LD2_State=HAL_GPIO_ReadPin(LD2_GPIO_Port, LD2_Pin);
+	  LD3_State=HAL_GPIO_ReadPin(LD3_GPIO_Port, LD3_Pin);
 	  UserBtnNow=HAL_GPIO_ReadPin(USER_Btn_GPIO_Port, USER_Btn_Pin);
 	  if((UserBtnNow==GPIO_PIN_SET) && (UserBtnPrev==GPIO_PIN_RESET)){
 		  Counter++;
@@ -135,7 +138,7 @@ int main(void)
 		  }
 	  }
 	  UserBtnPrev=UserBtnNow;
-	  HAL_Delay(10);
+	  HAL_Delay(100);
 #endif
     /* USER CODE BEGIN 3 */
   }

@@ -1,21 +1,10 @@
-14:44:32 **** Incremental Build of configuration Debug for project MyFirstProject ****
+18:03:49 **** Incremental Build of configuration Debug for project MyFirstProject ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:97:9: warning: unused variable 'LD1_State' [-Wunused-variable]
-   97 |   _Bool LD1_State;
-      |         ^~~~~~~~~
-arm-none-eabi-gcc -o "MyFirstProject.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Grzegorz\STM32CubeIDE\workspace_1.15.1\MyFirstProject\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MyFirstProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: MyFirstProject.elf
- 
 arm-none-eabi-size  MyFirstProject.elf 
-arm-none-eabi-objdump -h -S MyFirstProject.elf  > "MyFirstProject.list"
    text	   data	    bss	    dec	    hex	filename
-  11636	     12	   1708	  13356	   342c	MyFirstProject.elf
+  11696	     12	   1708	  13416	   3468	MyFirstProject.elf
 Finished building: default.size.stdout
  
-Finished building: MyFirstProject.list
- 
 
-14:44:32 Build Finished. 0 errors, 1 warnings. (took 864ms)
+18:03:50 Build Finished. 0 errors, 0 warnings. (took 267ms)
 
