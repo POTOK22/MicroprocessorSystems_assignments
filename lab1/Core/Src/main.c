@@ -69,7 +69,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 	}
 	if(GPIO_Pin==EXT_BTN2_Pin){
 		RisingEdge=1;
-		}
+	}
 }
 #endif
 //#if TASK==5

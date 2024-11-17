@@ -15,7 +15,7 @@
   *
   ******************************************************************************
   */
-#define TASK 4
+#define TASK 5
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
@@ -27,6 +27,9 @@
 #if TASK==2
 #include "stdio.h"
 #endif
+#if TASK==5
+#include "string.h"
+#endif
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -36,7 +39,9 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-
+#if TASK==5
+#define SIZE_OF_MESSAGE 5
+#endif
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -48,14 +53,96 @@
 
 /* USER CODE BEGIN PV */
 #if TASK==4
-unsigned char Message[]='\0';
+unsigned char Message='\0';
+#endif
+#if TASK==5
+unsigned char Message[SIZE_OF_MESSAGE];
+char WrongMessage[]="Wrong Message\n\r";
 #endif
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
+#if TASK==4
+/**
+  * @brief  Rx Transfer completed callback.
+  * @param  huart UART handle.
+  * @retval None
+  */
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+{
+  /* Prevent unused argument(s) compilation warning */
+  if(huart==&huart3){
+	  HAL_UART_Transmit_IT(&huart3, &Message, 1);
+	  HAL_GPIO_TogglePin(LD1_GPIO_Port, LD1_Pin);
+  }
 
+  /* NOTE : This function should not be modified, when the callback is needed,
+            the HAL_UART_RxCpltCallback can be implemented in the user file.
+   */
+}
+/**
+  * @brief Tx Transfer completed callback.
+  * @param huart UART handle.
+  * @retval None
+  */
+void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart)
+{
+  /* Prevent unused argument(s) compilation warning */
+  if(huart==&huart3){
+	  HAL_UART_Receive_IT(&huart3, &Message, 1);
+	  HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+  }
+
+  /* NOTE : This function should not be modified, when the callback is needed,
+            the HAL_UART_TxCpltCallback can be implemented in the user file.
+   */
+}
+#endif
+#if TASK==5
+/**
+  * @brief Tx Transfer completed callback.
+  * @param huart UART handle.
+  * @retval None
+  */
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+{
+  /* Prevent unused argument(s) compilation warning */
+  if(huart==&huart3){
+	  if(strcmp((char*)Message, "LD1_1")==0){
+		  HAL_UART_Receive_IT(&huart3, Message, SIZE_OF_MESSAGE);
+		  HAL_GPIO_WritePin(LD1_GPIO_Port, LD1_Pin, GPIO_PIN_SET);
+	  }
+	  else if(strcmp((char*)Message, "LD2_1")==0){
+		  HAL_UART_Receive_IT(&huart3, Message, SIZE_OF_MESSAGE);
+		  HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+	  }
+	  else if(strcmp((char*)Message, "LD3_1")==0){
+		  HAL_UART_Receive_IT(&huart3, Message, SIZE_OF_MESSAGE);
+		  HAL_GPIO_WritePin(LD3_GPIO_Port, LD3_Pin, GPIO_PIN_SET);
+	  }
+	  else if(strcmp((char*)Message, "LD1_0")==0){
+		  HAL_UART_Receive_IT(&huart3, Message, SIZE_OF_MESSAGE);
+		  HAL_GPIO_WritePin(LD1_GPIO_Port, LD1_Pin, GPIO_PIN_RESET);
+	  }
+	  else if(strcmp((char*)Message, "LD2_0")==0){
+		  HAL_UART_Receive_IT(&huart3, Message, SIZE_OF_MESSAGE);
+		  HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+	  }
+	  else if(strcmp((char*)Message, "LD3_0")==0){
+		  HAL_UART_Receive_IT(&huart3, Message, SIZE_OF_MESSAGE);
+		  HAL_GPIO_WritePin(LD3_GPIO_Port, LD3_Pin, GPIO_PIN_RESET);
+	  }
+	  else
+		  HAL_UART_Transmit_IT(&huart3, (unsigned char*)WrongMessage, sizeof(WrongMessage)-1);
+  }
+
+  /* NOTE : This function should not be modified, when the callback is needed,
+            the HAL_UART_TxCpltCallback can be implemented in the user file.
+   */
+}
+#endif
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -105,6 +192,12 @@ int main(void)
 #if TASK==2
   GPIO_PinState UserBtnOn;
   unsigned int counter;
+#endif
+#if TASK==4
+  HAL_UART_Transmit_IT(&huart3, &Message, 1);
+#endif
+#if TASK==5
+  HAL_UART_Receive_IT(&huart3, Message, SIZE_OF_MESSAGE);
 #endif
   /* USER CODE END 2 */
 
