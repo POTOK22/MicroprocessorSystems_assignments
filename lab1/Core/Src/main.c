@@ -53,6 +53,8 @@ _Bool RisingEdge=0;
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_USART3_UART_Init(void);
+
+/* USER CODE BEGIN PFP */
 #if TASK==3
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 	if(GPIO_Pin==USER_Btn_Pin){
@@ -80,8 +82,6 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 //	}
 //}
 //#endif
-/* USER CODE BEGIN PFP */
-
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -133,7 +133,6 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    /* USER CODE END WHILE */
 #if TASK==1
 	  LD1_State=HAL_GPIO_ReadPin(LD1_GPIO_Port, LD1_Pin);
 	  LD2_State=HAL_GPIO_ReadPin(LD2_GPIO_Port, LD2_Pin);
@@ -199,6 +198,8 @@ int main(void)
 	  UserBtn2Prev=UserBtn2Now;
 	  HAL_Delay(10);
 #endif
+    /* USER CODE END WHILE */
+
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
