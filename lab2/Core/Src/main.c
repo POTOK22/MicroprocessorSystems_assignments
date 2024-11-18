@@ -25,10 +25,10 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #if TASK==2
-#include "stdio.h"
+#include <stdio.h>
 #endif
 #if TASK==5
-#include "string.h"
+#include <string.h>
 #endif
 /* USER CODE END Includes */
 

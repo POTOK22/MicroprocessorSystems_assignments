@@ -1,4 +1,4 @@
-16:44:44 **** Incremental Build of configuration Debug for project L04_Example ****
+03:27:34 **** Incremental Build of configuration Debug for project L04_Example ****
 make -j8 all 
 arm-none-eabi-size  L04_Example.elf 
    text	   data	    bss	    dec	    hex	filename
@@ -6,5 +6,5 @@ arm-none-eabi-size  L04_Example.elf
 Finished building: default.size.stdout
  
 
-16:44:44 Build Finished. 0 errors, 0 warnings. (took 306ms)
+03:27:34 Build Finished. 0 errors, 0 warnings. (took 303ms)
 
